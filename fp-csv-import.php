@@ -28,7 +28,7 @@ function csv_importer_page() {
                     $name = sanitize_text_field($data[0]);
                     $email = sanitize_email($data[1]);
                     global $wpdb;
-                    $table_name = $wpdb->prefix . 'csv_data'; // Replace with your table name
+                    $table_name = $wpdb->prefix . 'csv_data'; 
                     $wpdb->insert(
                         $table_name,
                         array(
